@@ -2,49 +2,86 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Richard Hendricks"
+  name: "Genereux Alahassa"
   label: "Programmer"
   picture: "https://placehold.it/240x240"
   email: ""
-  phone: "(912) 555-4321"
-  website: "https://piedpiper.com"
+  phone: "(212) 777-240979"
+  website: "https://wilofice.github.io"
   summary: >
-    Richard hails from Tulsa.
-    He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!)
-    Before starting Pied Piper, he worked for Hooli as a part time software developer.
-    While his work focuses on applied information theory,
-    mostly optimizing lossless compression schema of both the length-limited and adaptive variants,
-    his non-work interests range widely,
-    everything from quantum computing to chaos theory.
+    Genereux hails from Cotonou, Benin.
+    He has earned degrees from the Mohammadia School of Engineers in Rabat, Morocco. 
+    Before starting his engeneering studies, he did 2 years of intense preparatory classes in Mathematics Physics.
+    He has earned his Baccalaureat in Sciences from CEG APPLICATION in Porto-Novo, Benin.
+    His current work focuses on advanced graph and games theory algorithms.
+    He shares a lot of his work and passion through his blog.
+    He has a broad range of interest like artificial intelligence, blockchain, space exploration and much more.
     He could tell you about it, but THAT would NOT be a “length-limited” conversation!
-    Open `_data/resume.yml` to edit this text.
   location:
-    address: "2712 Broadway St"
-    postalCode: "CA 94115"
-    city: "San Francisco"
-    countryCode: "US"
-    region: "California"
+    address: "Al Baida, Imm 7 Etg 2 Appt 11"
+    postalCode: "Bouskoura 25100"
+    city: "Bouskoura"
+    countryCode: "MA"
+    region: "Casablanca"
   profiles:
     - network: "Twitter"
-      username: "RHendricksCEO"
-      url: ""
+      username: "wilofice"
+      url: "https://www.twitter.com/wilofice"
     - network: "LinkedIn"
-      username: "Richard Hendricks"
-      url: ""
+      username: "Genereux ALAHASSA"
+      url: "https://www.linkedin.com/in/wilofice/"
 work:
-  - company: "Pied Piper"
-    position: "CEO/President"
-    website: "https://piedpiper.com"
-    startDate: "2013-12-01"
+  - company: "Akka Technology"
+    position: "C# Technical Lead"
+    website: "https://www.akka-technologies.com/"
+    startDate: "2019-07-01"
     endDate: ""
     summary: >
-      Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
-      consistently fielded high Weisman Scores™ that are not merely competitive,
-      but approach the theoretical limit of lossless compression.
+      As a global leader in engineering consulting and R&D services, 
+      AKKA supports the world's leading industry players in their digital
+      transformation and throughout their entire product life cycle.
     highlights:
-      - "Built an algorithm for artist to detect if their music was violating copy right infringement laws"
-      - "Successfully won Techcrunch Disrupt"
-      - "Optimized an algorithm that holds the current world record for Weisman Scores"
+      - "Worked on many web solutions for Cdiscount company"
+      - "Participated in the training of young recruits by giving presentations on .NET Core and C# "
+      - "Tech stack: Web Api, C#, .NET CORE 3, SSMS, Javascript, Elastic Search, Dynatrace, Logstash"
+  - company: "Ethycall"
+    position: "Django Developper"
+    website: "https://ethycally.com"
+    startDate: "2019-01-01"
+    endDate: "2020-09-30"
+    endDate: ""
+    summary: >
+      Ethycally's mission is to build the best community and the biggest marketplace
+      for ethical fashion in the world that gives back to important humanitarian causes.
+    highlights:
+      - "Participated in board meeting and set features roadmap"
+      - "Developped the website server"
+      - "Tech stack: Python, Django, Oscar CMS"
+  - company: "Shortlink"
+    position: "Full Stack Web Developer"
+    website: "https://shortlink.ma"
+    startDate: "2018-10-01"
+    endDate: "2018-12-30"
+    summary: >
+      Shortlink is a professional relational marketing solution. 
+      Simple and easy to use, it offers the possibility to any company to manage 
+      its transactional or marketing SMS deliveries from the same platform.
+    highlights:
+      - "Developed web solutions for the client Autohall"
+      - "Managed the deployment and the maintenance of delivered projects"
+      - "Tech stack: C#, ASP.NET, SQL Server, Hangfire, .NET Core, Web Api, React JS, Azure DevOps, Hyper-V, Docker"
+  - company: "Societe General Africa Technologies and Services"
+    position: "Web Developer Intern"
+    website: "https://africa-technologies-services.sgcib.com/en"
+    startDate: "2018-02-01"
+    endDate: "2018-08-30"
+    summary: >
+      Societe Generale Africa Technologies and Services -SG ATS- (A subsidiary of Societe Generale Group)
+      was created in 2014 with the aim of providing agile and efficient solutions to banking trading rooms in Europe
+    highlights:
+      - "Developed a REST API to compute KPIs from Azure Batch logs"
+      - "Used Elastic Search and Grafana to index thoses KPIs and display graphs"
+      - "Tech stack: C#, .NET Core, Azure Service Fabric, Azure Batch"
 volunteer:
   - organization: "CoderDojo"
     position: "Teacher"
@@ -55,26 +92,37 @@ volunteer:
     highlights:
       - "Awarded 'Teacher of the Month'"
 education:
-  - institution: "University of Oklahoma"
-    area: "Information Technology"
-    studyType: "Bachelor"
-    startDate: "2011-06-01"
-    endDate: "2014-01-01"
-    gpa: "4.0"
+  - institution: "Mohammadia School of Engeneering"
+    area: "Computer Science"
+    studyType: "Engeneer Degree"
+    startDate: "2015-09-01"
+    endDate: "2018-01-01"
+    gpa: "3.5"
     courses:
-      - "DB1101 - Basic SQL"
-      - "CS2011 - Java Introduction"
-awards:
-  - title: "Digital Compression Pioneer Award"
-    date: "2014-11-01"
-    awarder: "Techcrunch"
-    summary: "There is no spoon."
-publications:
-  - name: "Video compression for 3d media"
-    publisher: "Hooli"
-    releaseDate: "2014-10-01"
-    website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
-    summary: "Innovative middle-out compression algorithm that changes the way we store data."
+      - "Algorithms"
+      - "SQL"
+      - "Java Introduction"
+      - "UML Design"
+  - institution: "Lycee Ibn Taymia"
+    area: "Mathmatics Physics"
+    studyType: "Preparatory Classes"
+    startDate: "2013-09-01"
+    endDate: "2015-07-30"
+    gpa: "2.0"
+    courses:
+      - "Mathematics"
+      - "Physics"
+      - "English"
+  - institution: "CEG APPLICATION"
+    area: "Sciences"
+    studyType: "Baccalaureate"
+    startDate: ""
+    endDate: "2013-07-30"
+    gpa: "3.5"
+    courses:
+      - "Mathematics"
+      - "Biology"
+      - "Chemistry and Physics"
 skills:
   - name: "Web Development"
     level: "Master"
@@ -82,22 +130,62 @@ skills:
       - "HTML"
       - "CSS"
       - "Javascript"
-  - name: "Compression"
+      - "Jquery"
+  - name: ".NET Platform"
     level: "Master"
     keywords:
-      - "Mpeg"
-      - "MP4"
-      - "GIF"
-languages:
-  - language: "English"
-    fluency: "Native speaker"
-interests:
-  - name: "Wildlife"
+      - "C#"
+      - ".NET Core 3"
+      - "ASP.NET MVC"
+      - "SQL Server"
+  - name: "Frontend Framework"
+    level: "Master"
     keywords:
-      - "Ferrets"
-      - "Unicorns"
+      - "React"
+      - "Redux"
+      - "Typescript"
+  - name: "Monitoring"
+    level: "Master"
+    keywords:
+      - "ElasticSearch"
+      - "Kibana"
+      - "Dynatrace"
+      - "Logstash"
+  - name: "Cloud"
+    level: "Master"
+    keywords:
+      - "AWS EC2"
+      - "AWS Routing"
+  - name: "Microservices"
+    level: "Master"
+    keywords:
+      - "Domain Driven Design"
+      - "Event Sourcing"
+      - "Kubernetes"
+  - name: "Machine learning"
+    level: "Master"
+    keywords:
+      - "Machine learning algorithms"
+      - "Tensorflow"
+  - name: "Algorithms"
+    level: "Master"
+    keywords:
+      - "Dynamic Programming"
+      - "Graph Theory"
+      - "Game Theory"
+languages:
+  - language: "French"
+    fluency: "Native speaker"
+  - language: "English"
+    fluency: "Proficient speaker"
+interests:
+  - name: "Programming sport"
+    keywords:
+      - "Codeforces"
+      - "TopCode"
+      - "Hackerrank"
 references:
-  - name: "Erlich Bachman"
+  - name: "Imane Chakib"
     reference: >
-      It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+      It is my pleasure to recommend Genereux, his performance working as a consultant for Cdiscount
       Company proved that he will be a valuable addition to any company.
