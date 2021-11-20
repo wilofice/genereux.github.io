@@ -9,7 +9,7 @@
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# baseurl:               '/hydejack-starter-kit'
+baseurl:               '/'
 
 
 # General settings
@@ -37,7 +37,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/myself.png
+logo:                  /assets/img/metoo.jpeg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -47,7 +47,8 @@ author:
   social:
     twitter: wilofice
     github: wilofice
-    linkedIn: wilofice
+    linkedin: wilofice
+    
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -279,7 +280,7 @@ hydejack:
     always:            false
 
     # Set to `true` to use the dark theme based on visitors' preference (OS setting).
-    dynamic:           true
+    dynamic:           false
 
     # Set to `true` to allow visitors to switch between light and dark mode.
     icon:              true
