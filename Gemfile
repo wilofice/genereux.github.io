@@ -47,5 +47,8 @@ group :jekyll_plugins do
   gem "jekyll-compose"
 end
 
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
+
 gem 'wdm' if Gem.win_platform?
 gem "tzinfo-data" if Gem.win_platform?
