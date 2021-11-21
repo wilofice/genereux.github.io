@@ -1,7 +1,7 @@
 ---
 layout: project
-title: 'Hydejack Site'
-caption: Dogfooding Hydejack to sell Hydejack.
+title: 'My Site'
+caption: Dogfooding.
 description: >
   While Hydejack is built for personal sites, it's versatility allows it to be used a product page as well.
 date: '01-01-2016'
@@ -13,6 +13,6 @@ image:
     480w:  /assets/img/projects/hydejack-site@0,25x.jpg
 links:
   - title: Link
-    url: https://hydejack.com/
+    url: ''
 sitemap: false
 ---
