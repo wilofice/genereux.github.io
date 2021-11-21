@@ -5,6 +5,9 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{ site.google_analytics }}');
+  gtag('config', '{{ site.google_analytics }}', {
+  cookie_domain: '.wilofice.github.io',
+  cookie_flags: 'SameSite=None;Secure',
+});
 </script>
 {% endif %}
