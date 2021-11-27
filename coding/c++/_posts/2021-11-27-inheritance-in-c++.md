@@ -3,6 +3,7 @@ layout: post
 title: Inheritance in c++
 image:
   path:    /assets/img/posts/tutorials/cpp_inheritance.png
+comments: true
 ---
 
 
