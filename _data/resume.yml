@@ -82,15 +82,6 @@ work:
       - "Developed a REST API to compute KPIs from Azure Batch logs"
       - "Used Elastic Search and Grafana to index thoses KPIs and display graphs"
       - "Tech stack: C#, .NET Core, Azure Service Fabric, Azure Batch"
-volunteer:
-  - organization: "CoderDojo"
-    position: "Teacher"
-    website: "https://coderdojo.com/"
-    startDate: "2012-01-01"
-    endDate: "2013-01-01"
-    summary: "Global movement of free coding clubs for young people."
-    highlights:
-      - "Awarded 'Teacher of the Month'"
 education:
   - institution: "Mohammadia School of Engeneering"
     area: "Computer Science"
@@ -184,8 +175,3 @@ interests:
       - "Codeforces"
       - "TopCode"
       - "Hackerrank"
-references:
-  - name: "Imane Chakib"
-    reference: >
-      It is my pleasure to recommend Genereux, his performance working as a consultant for Cdiscount
-      Company proved that he will be a valuable addition to any company.

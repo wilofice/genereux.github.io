@@ -15,7 +15,7 @@ The inheritance concept can be grouped in two notions:
 - derived class (child) : class that inherits from another class
 - base class (parent): the being inherited from
 
-To inherit from a class, use the symbol : .
+To inherit from a class, use the symbol ":" .
 
 In the example below, the Airbus class (child) inherits from the attributes and methods from the Airbus class (parent).
 
