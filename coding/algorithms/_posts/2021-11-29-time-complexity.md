@@ -13,9 +13,11 @@ The efficiency of algorithms is important in programming. Often, it is easy to c
 
 
 Definition
-In computer science, the time complexity is the computational complexity that describes the amount of computer time it takes to run an algorithm. Time complexity is commonly estimated by counting the number of elementary operations performed by the algorithm, supposing that each elementary operation takes a fixed amount of time to perform.
+
+> In computer science, the time complexity is the computational complexity that describes the amount of computer time it takes to run an algorithm. Time complexity is commonly estimated by counting the number of elementary operations performed by the algorithm, supposing that each elementary operation takes a fixed amount of time to perform. [Source Wikipedia](https://en.wikipedia.org/wiki/Time_complexity)
 
 Rules
+
 1) Notation
 
 The time complexity of an algorithm is denoted O(f(n)) where f(n) represents some function. 
@@ -86,4 +88,4 @@ O(nlog(n)) This time complexity often indicates that the algorithm sorts the inp
 because the time complexity of efficient sorting algorithms O(nlog(n). Another possibility is that the algorithm uses a data structure where each operation takes O(log(n)) time.
 
 
-
+In the following article, I will explain more about time complexities phases and estimation.
