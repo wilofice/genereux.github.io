@@ -31,13 +31,13 @@ A common reason why an algorithm takes a lot of computing power is that it conta
 For instance, if an algorithm use k nested loops and in each loop, it iterates over an input of size n, the time complexity will be O(n**k).
 
 Examples:
-The time complexity of the following code is O(n) because we have one loop that iterates over an input of size n and for each element of the input, it does one elementary operation(adition).
+The time complexity of the following code is O(n) because we have one loop that iterates over an input of size n and for each element of the input, it does one elementary operation(addition).
 ~~~c++
 for(int i = 1; i <= n; i++){
     answer += 1 + i;
 }
 ~~~
-The time complexity of the following code is O(n*n) because we have one loop that iterates over an input of size n.
+The time complexity of the following code is O(n*n) because we have two nested loop abd each loop iterates over an input of size n.
 ~~~c++
 for(int i = 1; i <= n; i++){
     for(int j = 1; j <= n; j++){
@@ -50,7 +50,7 @@ for(int i = 1; i <= n; i++){
 
 A time complexity does not tell us the exact number of elementary operations that a code does to solve a problem but it shows only the order of magnitude. It is an approximative evaluation of the maximum number of computing operations required to solve a problem. 
 
-Exemple 1:  In the following code, the loop is executed 5 times over an input of size n. For every element of the input, it does some elementary computing operations . Those operations requires are said to ran in constant time. Let be c the constant number of elementary operations inside the loop. So the time complexity of this code is O(3*n*c) which is equivalent to O(n). O(3*n*c* ~ O(n)
+Exemple 1:  In the following code, the loop is executed 5 times over an input of size n. For every element of the input, it does some elementary computing operations . Those operations requires are said to ran in constant time. Let be c the constant number of elementary operations inside the loop. So the time complexity of this code is O(3*n*c) which is equivalent to O(n). O(3*n*c*) ~ O(n)
 ~~~c++
 for(int i = 1; i <= 5*n; i++){
     answer += 1 + i;
@@ -88,4 +88,5 @@ O(nlog(n)) This time complexity often indicates that the algorithm sorts the inp
 because the time complexity of efficient sorting algorithms O(nlog(n). Another possibility is that the algorithm uses a data structure where each operation takes O(log(n)) time.
 
 
-In the following article, I will explain more about time complexities phases and estimation.
+
+In the following article (Time complexity (Part two)), I will explain more about time complexities phases and estimation.
