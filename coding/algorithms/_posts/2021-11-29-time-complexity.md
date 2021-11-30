@@ -8,7 +8,7 @@ comments: true
 
 Time complexity (Part one)
 
-The efficiency of algorithms is important in programming. Often, it is easy to come up with an algorithm that solves the problem by using brute force solution . That kind of solution is most of the time very expensive to run because it requires lot of computing power (ram, cpu or gpu). The real challenge when designing an algorithm is to design a fast one that requires less computing power and solves the problem and the shortest time.
+The efficiency of algorithms is important in programming. Often, it is easy to come up with an algorithm that solves the problem by using brute force solution . That kind of solution is most of the time very expensive to run because it requires lot of computing power (ram, cpu or gpu). The real challenge when designing an algorithm is to design a fast one that requires less computing power and solves the problem in the shortest time.
 
 
 
