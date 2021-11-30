@@ -37,7 +37,7 @@ for(int i = 1; i <= n; i++){
     answer += 1 + i;
 }
 ~~~
-The time complexity of the following code is O(n*n) because we have two nested loop abd each loop iterates over an input of size n.
+The time complexity of the following code is O(n*n) because we have two nested loop and each loop iterates over an input of size n.
 ~~~c++
 for(int i = 1; i <= n; i++){
     for(int j = 1; j <= n; j++){
