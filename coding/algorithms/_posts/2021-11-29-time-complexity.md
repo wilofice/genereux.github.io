@@ -50,7 +50,7 @@ for(int i = 1; i <= n; i++){
 
 A time complexity does not tell us the exact number of elementary operations that a code does to solve a problem but it shows only the order of magnitude. It is an approximative evaluation of the maximum number of computing operations required to solve a problem. 
 
-Exemple 1:  In the following code, the loop is executed 5 times over an input of size n. For every element of the input, it does some elementary computing operations . Those operations requires are said to ran in constant time. Let be c the constant number of elementary operations inside the loop. So the time complexity of this code is O(3*n*c) which is equivalent to O(n). O(3*n*c*) ~ O(n)
+Exemple 1:  In the following code, the loop is executed 5 times over an input of size n. For every element of the input, it does some elementary computing operations . Those operations requires are said to ran in constant time. Let be c the constant number of elementary operations inside the loop. So the time complexity of this code is O(5*n*c) which is equivalent to O(n). O(5*n*c) ~ O(n)
 ~~~c++
 for(int i = 1; i <= 5*n; i++){
     answer += 1 + i;
