@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Algorithm time complexity (Part one)
+title: Algorithm time complexity (Basics)
 image:
   path:    /assets/img/posts/tutorials/time_complexity.jpg
 comments: true
 ---
 
-Time complexity (Part one)
+Time complexity (Basics)
 
 The efficiency of algorithms is important in programming. Often, it is easy to come up with an algorithm that solves the problem by using brute force solution . That kind of solution is most of the time very expensive to run because it requires lot of computing power (ram, cpu or gpu). The real challenge when designing an algorithm is to design a fast one that requires less computing power and solves the problem in the shortest time.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Time complexity (Part two)
+title: Time complexity : estimating efficiency
 image:
   path:    /assets/img/posts/tutorials/time_complexity.jpg
 comments: true
 ---
 
-Time complexity (Part two)
+Time complexity : estimating efficiency
 
 1) Phases
 
