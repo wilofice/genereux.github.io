@@ -31,7 +31,7 @@ for (int i = 1; i <= n; i++) {
 }
 ~~~
 
-If the algorithm consists of many phases, the total time complexity is the time complexity of the dominant phase. The dominant phase corresponds to the slowest part of the algorithm, the one that run in the longest time. Indeed, it is usually the bottleneck of the code. 
+If the algorithm consists of many phases, the total time complexity is the time complexity of the dominant phase. The dominant phase corresponds to the slowest part of the algorithm, the one that runs in the longest time. Indeed, it is usually the bottleneck of the code. 
 
 In the example above, the code has three phases with time complexities O(n), O(n<sup>2</sup>), and O(n).
 So the time complexity of the code is 0(n<sup>2</sup>) because it is the slowest one.
@@ -41,7 +41,7 @@ So the time complexity of the code is 0(n<sup>2</sup>) because it is the slowest
 Often the time complexity of an algorithm may depends on many constraints.
 That can happen when the input size is multidimensional like a 2D or 3D array .
 Or it may be because the algorithm depends on different inputs with different constraints. 
-In that case, the time complexity is function of the independants variables that caracterizes the input.
+In that case, the time complexity is function of the independants variables that caracterize the input.
 For instance, the following code has a time complexity of O(mn).
 ~~~c++
 for (int i = 1; i <= n; i++) {
@@ -52,15 +52,14 @@ for (int i = 1; i <= n; i++) {
 ~~~
 
 
-Specific case : Recursion
-The time complexity of a recursive function depends on the number of times
-the function is called and the time complexity of a single call. The total time
-complexity is the product of these values.
+The specific case of Recursion
+
+The time complexity of a recursive function depends on the number of times the function is called and the time complexity of a single call. The total time complexity is the product of these values.
 
 For example, consider the following function:
 ~~~c++
 void f(int n) {
-    if (n == 1) return;
+    if (n == -1) return;
     f(n-1);
 }
 ~~~
@@ -74,13 +73,13 @@ Thus, the total time complexity is O(n).
 Evaluating a time complexity of an algorithm before implementing it in production code or a coding competition is an excellent way to check if it is sufficient enough to solve the problem while complying with the performance constraints. 
 Modern computers today can perform hundreds of millions of operations in a seconds but they still have some limits. In a real time application, you may be running your code on a dataset of billion of users per minute. In that case, your code must be the fastest possible. 
 
-For instance, let's assume that the time limit for a problem is one second and the input size is n = 10**5; Let's suppose you have designed an algorithm of O(nxx2) time complexity. It will require about (10<sup>5</sup>)<sup>2</sup> = 10<sup>10</sup> operations. That means your solution will run in at least tens seconds. It is then two slow for solving the problem. 
+For instance, let's assume that the time limit for a problem is one second and the input size is n = 10<sup>5</sup>; Let's suppose you have designed an algorithm of O(n<sup>2</sup>) time complexity. It will require about (10<sup>5</sup>)<sup>2</sup> = 10<sup>10</sup> operations. That means your solution will run in at least tens seconds. It is then two slow for solving the problem. 
 
 But given the input size, we can try to guess the required time complexity of the algorithm that solves the problem. 
 
 The table below indicates useful estimations assuming with we have a time limit of one second to solve the problem. 
 
-| input size      | required time complexity |
+| input size      |  maximum required time complexity |
 | --------------- | ------------------------ |
 | n <= 10         | O(n!)       |
 | n <= 20          | O(2<sup>n</sup>)       |
