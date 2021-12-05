@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time complexity : estimating efficiency
+title: Time complexity (estimating efficiency)
 image:
   path:    /assets/img/posts/tutorials/time_complexity.jpg
 comments: true
