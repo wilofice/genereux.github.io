@@ -8,7 +8,7 @@ comments: true
 
 Time complexity : estimating efficiency
 
-1) Phases
+#### 1) Phases
 
 Phases are dominant parts of the algorithm. For instance, in the example below, the code has three phases. Each phase has its time complexity. 
 
@@ -36,7 +36,7 @@ If the algorithm consists of many phases, the total time complexity is the time 
 In the example above, the code has three phases with time complexities O(n), O(n<sup>2</sup>), and O(n).
 So the time complexity of the code is 0(n<sup>2</sup>) because it is the slowest one.
 
-2) Time complexity with multiple factors
+#### 2) Time complexity with multiple factors
 
 Often the time complexity of an algorithm may depends on many constraints.
 That can happen when the input size is multidimensional like a 2D or 3D array .
@@ -68,7 +68,7 @@ The call f(n) required n function calls to compute the final result, and the tim
 Thus, the total time complexity is O(n).
 
 
-3) Evaluating an algorithm efficiency
+#### 3) Evaluating an algorithm efficiency
 
 Evaluating a time complexity of an algorithm before implementing it in production code or a coding competition is an excellent way to check if it is sufficient enough to solve the problem while complying with the performance constraints. 
 Modern computers today can perform hundreds of millions of operations in a seconds but they still have some limits. In a real time application, you may be running your code on a dataset of billion of users per minute. In that case, your code must be the fastest possible. 
