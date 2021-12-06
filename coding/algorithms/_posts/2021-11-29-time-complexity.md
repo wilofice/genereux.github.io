@@ -90,3 +90,13 @@ because the time complexity of efficient sorting algorithms O(nlog(n). Another p
 
 
 In the following article (Time complexity (Part two)), I will explain more about time complexities phases and estimation.
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2815437767553359"
+     data-ad-slot="4829041927"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
