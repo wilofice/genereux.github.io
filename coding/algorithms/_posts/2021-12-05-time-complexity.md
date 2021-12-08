@@ -2,7 +2,7 @@
 layout: post
 title: Time complexity (estimating efficiency)
 image:
-  path:    /assets/img/posts/tutorials/time_complexity.jpg
+  path:    /assets/img/posts/tutorials/time_complexity_2.jpg
 comments: true
 ---
 
