@@ -6,7 +6,7 @@ image:
 comments: true
 ---
 
-Time complexity : estimating efficiency
+In this article, we are going to see more detail about how to estimate the efficiency of an algorithm based on its time complexity
 
 #### 1) Phases
 

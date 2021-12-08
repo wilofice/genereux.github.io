@@ -6,19 +6,18 @@ image:
 comments: true
 ---
 
-Time complexity (Basics)
-
 The efficiency of algorithms is important in programming. Often, it is easy to come up with an algorithm that solves the problem by using brute force solution . That kind of solution is most of the time very expensive to run because it requires lot of computing power (ram, cpu or gpu). The real challenge when designing an algorithm is to design a fast one that requires less computing power and solves the problem in the shortest time.
 
+1. toc
+{:toc}
 
-
-Definition
+## Definition
 
 > In computer science, the time complexity is the computational complexity that describes the amount of computer time it takes to run an algorithm. Time complexity is commonly estimated by counting the number of elementary operations performed by the algorithm, supposing that each elementary operation takes a fixed amount of time to perform. [Source Wikipedia](https://en.wikipedia.org/wiki/Time_complexity)
 
-Rules
+## Rules
 
-1) Notation
+### Notation
 
 The time complexity of an algorithm is denoted O(f(n)) where f(n) represents some function. 
 Often n denotes the input size. For instance :
@@ -46,7 +45,7 @@ for(int i = 1; i <= n; i++){
 }
 ~~~
 
-2) Order of magnitude
+### Order of magnitude
 
 A time complexity does not tell us the exact number of elementary operations that a code does to solve a problem but it shows only the order of magnitude. It is an approximative evaluation of the maximum number of computing operations required to solve a problem. 
 
@@ -70,7 +69,7 @@ for(int i = 1; i <= n+15; i++){
 }
 ~~~
 
-3. Basic complexity classes
+## Basic complexity classes
 
 O(1) The running time of a constant-time algorithm does not depend on the
 input size. A typical constant-time algorithm is a direct formula that
