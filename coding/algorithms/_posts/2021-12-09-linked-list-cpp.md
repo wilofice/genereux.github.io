@@ -221,4 +221,4 @@ bool LinkedList::isInList(int val) const {
 }
 ~~~
 
-In a next article, we are going to see in details what is the time complexity of each operation. We also discuss about a case study of linked list real applications. 
+In a next article, we are going to see in details what is the time complexity of each operation. We will also discuss about a case study of linked list real applications. 
