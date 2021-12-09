@@ -121,7 +121,7 @@ void LinkedList::addToTail(int info){
 ## Deletion of the first element of a linked list
 
 Deleting of the dead of a linked list:
-- First we check if the list has only two nodes. That would mean that *head* is equal to *tail*
+- First we check if the list has only one node. That would mean that *head* is equal to *tail*
 - In that case, head and tail is set to *null* 
 - Otherwise, we save *head* in a temporary variable so that we can deallocate its memory space (this is a C++ particularity). Then *head* is reset so that what was the second node becomes the first.
 - Then we delete the allocated memory space the previous head of the list and return the value stored in that node.
