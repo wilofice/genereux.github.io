@@ -37,6 +37,7 @@ The class *LinkedList* has two data member:
 
 
 ~~~c++
+// file: "linkedlist.h"
 class Node {
 public:
     int info;
@@ -68,7 +69,11 @@ public:
     void deleteNode(int);
     bool isInList(int) const;
 };
+
+A basic implementation for a singly linked list
+{:.figcaption}
 ~~~
+
 
 This class also defines members that help  manipulating the list and do the basic operations of insertion, deletion over the list.
 
@@ -80,6 +85,7 @@ Inserting a node at the beginning of a list is performed in the following steps:
 - Finally we check that if *tail* has not been initialized so far. Indeed, if tail is *null*, it means that *head* is the only element of the list. That means it is also the last element of the list. Then *tail* must be equal to *head*
 
 ~~~c++
+// file: "linkedlist.cpp"
 #include <iostream>
 #include "linkedlist.h"
 
@@ -100,6 +106,7 @@ Inserted at the end of a linked list is performed by taking the following action
 
 
 ~~~c++
+// file: "linkedlist.cpp"
 #include <iostream>
 #include "linkedlist.h"
 
@@ -122,6 +129,7 @@ Deleting of the dead of a linked list:
 - Then we delete the allocated memory space the previous head of the list and return the value stored in that node.
 
 ~~~c++
+// file: "linkedlist.cpp"
 #include <iostream>
 #include "linkedlist.h"
 
@@ -149,6 +157,7 @@ Deleting the last element of a linked list is performed with the following steps
 
 
 ~~~c++
+// file: "linkedlist.cpp"
 #include <iostream>
 #include "linkedlist.h"
 
@@ -181,6 +190,7 @@ Deleting any element of the list is performed by following these septs:
 - Then we update our linked list variables *tail* and *head* so that our list remains consistant
 
 ~~~c++
+// file: "linkedlist.cpp"
 #include <iostream>
 #include "linkedlist.h"
 
@@ -211,6 +221,7 @@ void LinkedList::deleteNode(int val){
 To check if a value is in the linked list, we iterate over each element to check if the value exists. The value does not exist in the list if we iterate over the list until we hit the last element (*null*)
 
 ~~~c++
+// file: "linkedlist.cpp"
 #include <iostream>
 #include "linkedlist.h"
 

@@ -89,7 +89,7 @@ because the time complexity of efficient sorting algorithms O(nlog(n). Another p
 
 
 In the following article (Time complexity (Part two)), I will explain more about time complexities phases and estimation.
-
+<!--
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
@@ -99,3 +99,4 @@ In the following article (Time complexity (Part two)), I will explain more about
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+-->
