@@ -72,7 +72,12 @@ public:
 
 This class also defines members that help to manipulate the list and do the basic operations of insertion, deletion over the list.
 
-#### Insertion at the front of the list
+#### Insertion at the beginning of a linked list
+
+Inserting a node at the beginning of a list is performed in the following steps:
+- A new node is created. The value of *info* is initialized the one provided and its *next* member is set to be equal to head. Indeed, the new node must be at the front of the list so it is logical that its *next* member holds a pointer to the current head of the list
+- Since the new node is the new head of the list, the *head* data member must be updated to reflect that
+- Finally we check that if *tail* has not been initialized so far. Indeed, if tail is *null*, it means that *head* is the only element of the list. That means it is also the last element of the list. Then *tail* must be equal to *head*
 
 ~~~c++
 #include <iostream>
@@ -84,7 +89,15 @@ void LinkedList::addToHead(int info){
 }
 ~~~
 
-#### Insertion at the first element of the list
+#### Insertion at the end of the list
+
+Inserted at the end of a linked list is performed by taking the following actions: 
+- We check if *tail* is null then info is the first element that is being added to the list. So we simply call *addToHead* to add the new elememnt to the head of the linked list and that's all.
+- If it is not the case, we create a new node and initialize it's *info* data member.
+- The new node must be the last element of the list so we set the *next* data member of the current *tail* property.
+- The new node added has become the last element of list, then we must update *tail* to reflect that.
+
+
 
 ~~~c++
 #include <iostream>
@@ -93,6 +106,7 @@ void LinkedList::addToHead(int info){
 void LinkedList::addToTail(int info){
     if(tail == 0){
         addToHead(info);
+        return;
     }
     tail->next = new Node(info);
     tail = tail->next;
@@ -100,6 +114,12 @@ void LinkedList::addToTail(int info){
 ~~~
 
 #### Deletion of the head of the list
+
+Deleting of the dead of a linked list:
+- First we check if the list has only two nodes. That would mean that *head* is equal to *tail*
+- In that case, head and tail is set to *null* 
+- Otherwise, we save *head* in a temporary variable so that we can deallocate its memory space (this is a C++ particularity). Then *head* is reset so that what was the second node becomes the first.
+- Then we delete the allocated memory space the previous head of the list and return the value stored in that node.
 
 ~~~c++
 #include <iostream>
@@ -120,6 +140,13 @@ int LinkedList::deleteFromHead() {
 
 
 #### Deletion of the last element of the list
+
+Deleting the last element of a linked list is performed with the following steps:
+- We save in a temporary variable, *tmp*  the value of the current tail of the list. 
+- We check if the linked list has only one element by checking if *head* is equal to *tail*. In that case, we delete *tmp* and deallocate its memory
+- Otherwise, we iterate over the list from beginning with the *head* until we reach the current node before the last element. 
+- *tail* is updated to become it's previous element and its *next* member must is updated to reflect that there is no element after *tail*
+
 
 ~~~c++
 #include <iostream>
@@ -146,6 +173,11 @@ int LinkedList::deleteFromTail() {
 
 #### Deletion of any element of the list
 
+Deleting any element of the list is performed by following these septs:
+- We check of course if head is null . In that case, no action needed. 
+- Otherwise we look for the previous element .
+- Then we update our linked list variables *tail* and *head* so that our list remains consistant
+
 ~~~c++
 #include <iostream>
 #include "linkedlist.h"
@@ -157,7 +189,6 @@ void LinkedList::deleteNode(int val){
         Node *tmp = head->next;
         delete head;
         head = tmp;
-        return;
     }
     Node *j;
     Node *previous;
@@ -173,33 +204,9 @@ void LinkedList::deleteNode(int val){
 }
 ~~~
 
-
-#### Deletion of the last element of the list
-
-~~~c++
-#include <iostream>
-#include "linkedlist.h"
-
-int LinkedList::deleteFromTail() {
-    Node *tmp = tail;
-    int info = tmp->info;
-    if(head == tail){
-        head = tail = 0;
-        delete tmp;
-    } else {
-        Node *j;
-        for(j = head; j->next != tail; j = j->next);
-        tail = j;
-        tail->next = 0;
-        delete tmp;
-    }
-    delete tmp;
-    return info;
-}
-~~~
-
-
 #### Check if an element is in the list
+
+To check if a value is in the linked list, we iterate over each element to check if the value exists. The value does not exist in the list if we iterate over the list until we hit the last element (*null*)
 
 ~~~c++
 #include <iostream>
@@ -211,3 +218,5 @@ bool LinkedList::isInList(int val) const {
     return i != 0;
 }
 ~~~
+
+In a next article, we are going to see in details what is the time complexity of each operation. We also discuss about a case study of linked list real applications. 
