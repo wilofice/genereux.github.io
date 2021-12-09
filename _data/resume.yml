@@ -88,7 +88,7 @@ education:
     studyType: "Engeneer Degree"
     startDate: "2015-09-01"
     endDate: "2018-01-01"
-    gpa: "3.5"
+    gpa: "3"
     courses:
       - "Algorithms"
       - "SQL"
