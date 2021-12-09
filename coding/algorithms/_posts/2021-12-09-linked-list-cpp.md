@@ -7,9 +7,11 @@ comments: true
 tags: [data structures, linked lists]
 ---
 
-To store a list of items, we usually use an array. This implementation is the most intuitive but it is not so efficient in terms of memory, time and usage.
+I remember, a few years ago, one of my colleagues wondering where I could ever, ever use a linked list. Today, I can't count how many projects I work on where I haven't used one linked list. It is an incredibly fundamental data structure and believe me, it is used heavily in the real world. For instance, a list of objects in a 3D game that need to be rendered to the screen or in genetics where DNA molecules are strung together. In this article, I will show you how to implement a basic linked list in C++.
 
-In this article, we are going to learn how to implement a linked list. It is an implementation that allocates memory to data item by data item as they are added in the list. It also come with the advantages that the insertion and deletion operations are very simple. 
+Storing a list of items usually requires the use of an array. It is the implementation that is the most intuitive but it is not so efficient in terms of memory, time and usage.
+
+Linked list is a special data structure that allocates memory to data item by data item as they are added in the list. It also come with the advantages that the insertion and deletion operations are very simple. 
 
 **Before continuing, I assume that you have basic undestanding of C++ classes, methods and pointers notions. If you feel more comfortable reading in the dark, you can set the dark mode by clicking on the button besides the menu button.**
 
