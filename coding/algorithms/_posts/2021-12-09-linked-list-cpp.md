@@ -11,8 +11,7 @@ To store a list of items, we usually use an array. This implementation is the mo
 
 In this article, we are going to learn how to implement a linked list. It is an implementation that allocates memory to data item by data item as they are added in the list. It also come with the advantages that the insertion and deletion operations are very simple. 
 
-**Before continuing, I assume that you have basic undestanding of C++ classes, methods and memory allocation notions.**
-**If you feel more comfortable reading in the dark, you can set the dark mode by clicking on the button besides the menu button*
+**Before continuing, I assume that you have basic undestanding of C++ classes, methods and pointers notions. If you feel more comfortable reading in the dark, you can set the dark mode by clicking on the button besides the menu button**
 
 1. toc
 {:toc}
@@ -70,9 +69,10 @@ public:
     bool isInList(int) const;
 };
 
+~~~
+
 A basic implementation for a singly linked list
 {:.figcaption}
-~~~
 
 
 This class also defines members that help  manipulating the list and do the basic operations of insertion, deletion over the list.
@@ -107,8 +107,6 @@ Inserted at the end of a linked list is performed by taking the following action
 
 ~~~c++
 // file: "linkedlist.cpp"
-#include <iostream>
-#include "linkedlist.h"
 
 void LinkedList::addToTail(int info){
     if(tail == 0){
@@ -130,8 +128,6 @@ Deleting of the dead of a linked list:
 
 ~~~c++
 // file: "linkedlist.cpp"
-#include <iostream>
-#include "linkedlist.h"
 
 int LinkedList::deleteFromHead() {
     Node *tmp = head;
@@ -158,8 +154,6 @@ Deleting the last element of a linked list is performed with the following steps
 
 ~~~c++
 // file: "linkedlist.cpp"
-#include <iostream>
-#include "linkedlist.h"
 
 int LinkedList::deleteFromTail() {
     Node *tmp = tail;
@@ -191,8 +185,6 @@ Deleting any element of the list is performed by following these septs:
 
 ~~~c++
 // file: "linkedlist.cpp"
-#include <iostream>
-#include "linkedlist.h"
 
 void LinkedList::deleteNode(int val){
     if(head == 0) return;
@@ -222,8 +214,6 @@ To check if a value is in the linked list, we iterate over each element to check
 
 ~~~c++
 // file: "linkedlist.cpp"
-#include <iostream>
-#include "linkedlist.h"
 
 bool LinkedList::isInList(int val) const {
     Node *i;
