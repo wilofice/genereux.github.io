@@ -11,7 +11,7 @@ To store a list of items, we usually use an array. This implementation is the mo
 
 In this article, we are going to learn how to implement a linked list. It is an implementation that allocates memory to data item by data item as they are added in the list. It also come with the advantages that the insertion and deletion operations are very simple. 
 
-**Before continuing, I assume that you have basic undestanding of C++ classes, methods and pointers notions. If you feel more comfortable reading in the dark, you can set the dark mode by clicking on the button besides the menu button**
+**Before continuing, I assume that you have basic undestanding of C++ classes, methods and pointers notions. If you feel more comfortable reading in the dark, you can set the dark mode by clicking on the button besides the menu button.**
 
 1. toc
 {:toc}
