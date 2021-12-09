@@ -7,7 +7,7 @@ comments: true
 tags: [data structures, linked lists]
 ---
 
-I remember, a few years ago, one of my colleagues wondering where I could ever, ever use a linked list. Today, I can't count how many projects I work on where I haven't used one linked list. It is an incredibly fundamental data structure and believe me, it is used heavily in the real world. For instance, a list of objects in a 3D game that need to be rendered to the screen or in genetics where DNA molecules are strung together. In this article, I will show you how to implement a basic linked list in C++.
+I remember, a few years ago, one of my colleagues wondering where I could ever, ever use a linked list. Today, I can't count how many projects I worked on where I haven't used one linked list. It is an incredibly fundamental data structure and believe me, it is used heavily in the real world. For instance, a list of objects in a 3D game that need to be rendered to the screen or in genetics where DNA molecules are strung together. In this article, I will show you how to implement a basic linked list in C++.
 
 Storing a list of items usually requires the use of an array. It is the implementation that is the most intuitive but it is not so efficient in terms of memory, time and usage.
 
