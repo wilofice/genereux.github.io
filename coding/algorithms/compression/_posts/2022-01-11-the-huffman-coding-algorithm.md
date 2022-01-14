@@ -1,23 +1,23 @@
 ---
 layout: post
-title: The Huffman coding algorithm
+title: Huffman Encoding Algorithm
 image:
-  path:    /assets/img/posts/huffmancoding.jpg
+  path:    /assets/img/posts/huffmancoding_1.jpg
 comments: true
 ---
 
 Data transmission is essential for the proper functioning of any structure on any level and any type of organisation. The faster data are transmitted, the smoother the structure operates. There are generally two ways to make data transmission fast: by improving the means of transfer or by changing the data so that the same information can be sent within a shorter time interval. In this tutorial, I am going to explore the Huffman Encoding algorithm used for doing data compression. 
 It is one of the essential algorithms behind file or text compression.
 
-We are going to learn how the Huffman Coding works and implements it in C++.
+We are going to learn how the Huffman Encoding (or Coding) works and implement it in C++.
 
 1. toc
 {:toc}
 
-## Principle of Huffman encoding algorithm
+## Principle of Huffman Encoding algorithm
 
-Huffman's algorithm is based on the construction of a binary tree that represents the code. Let T be that binary tree. Each node in T except the root represents a bit(0 or 1) in the code. A left child is represented by a '0' and a right child is reprensented by a '1'. Each disctinct caracter is then represented by an external node 'w'. 
-The code word for a caracter is obtained by concataining the bits associated with each node on the path from the root of the tree to 'w'. Since each caracter is associated with its occurence. Then each node of T has a frequency associated. The frequency of an external node 'w' is the frequency of the caracter associated and the frequency of an internal node 'u' is the sum of the frequency of all external nodes in the subtree rooted at 'u'.
+Huffman's algorithm is based on the construction of a binary tree that represents the code. Let T be that binary tree. Each node in T except the root represents a bit(0 or 1) in the code. A left child is represented by a *0* and a right child is reprensented by a *1*. Each disctinct caracter is then represented by an external node *w*. 
+The code word for a caracter is obtained by concataining the bits associated with each node on the path from the root of the tree to *w*. Since each caracter is associated with its occurence. Then each node of T has a frequency associated. The frequency of an external node *w* is the frequency of the caracter associated and the frequency of an internal node *u* is the sum of the frequency of all external nodes in the subtree rooted at *u*.
 
 ## Pseudo code algorithm
 
@@ -52,14 +52,13 @@ S = "Better to arrive late than not to come at all"
 
 | Character      |    empty character |a|b|c|e|h|i|l|m|n|o|r|t|v|
 | -----------    | ------------------ |-|-|-|-|-|-|-|-|-|-|-|-|-|
-| Frequency      |                   8|5|1|1|5|1|1|3|1|2|4|3|8|1|
+| Frequency      |                   9|5|1|1|5|1|1|3|1|2|4|3|8|1|
 
 2: Second, we run the huffman encoding algorithm described above to create the Huffman tree. 
 
-I used a HUffman Coding algorithm visualisation tool built by Yves Lucet available here https://cmps-people.ok.ubc.ca/ylucet/DS/Huffman.html . 
+I used a Huffman Coding algorithm visualisation tool built by Yves Lucet available [here](https://cmps-people.ok.ubc.ca/ylucet/DS/Huffman.html). 
 
 Watch the visualisation below which described step by step how the algorithm works.
-
 
 <figure>
 <video width="668" height="400" controls="true" allowfullscreen="false" poster="/assets/img/posts/huffman_example.png">
@@ -68,10 +67,24 @@ Watch the visualisation below which described step by step how the algorithm wor
 </video>
 </figure>
 
+
+Visualisation of the Huffman Encoding algorithm  
+{:.figcaption}
+
+
 Here is the Huffman Coding tree for the string "Better to arrive late than not to come at all".
 
 
 ![Full-width image](/assets/img/posts/huffman_example.png){:.lead width="668" height="143" loading="lazy"}
+
+Huffman Encoding Tree  
+{:.figcaption}
+
+In the Huffman tree, a left child is represented by a *0* and a right child is represented by a *1*. So we can compute now the binary code for each caracter in the input string. 
+
+| Character      |    empty character |a|B|c|e|h|i|l|m|n|o|r|t|v|
+| -----------    | ------------------ |-|-|-|-|-|-|-|-|-|-|-|-|-|
+| Encoding       |                   00|010|100000|01100|110|100001|100010|1110|01101|0111|1001|1111|101|100011|
 
 ## Implementation in C++
 
@@ -196,17 +209,17 @@ void Huffman::printHuffmanCode(Node* tree, int (&arr)[MAX_ARR], int size, string
 
 ## Complexity
 
-The Huffman Coding algorithm create an optimal code for a string of length n with d distinct characters in O(n + dlogd) time.
+The Huffman Coding algorithm create an optimal code for a string of length n with d distinct characters in **O(n+dlogd)** time.
 
 ## Applications
 
 Text compression is an important text processing task. It is useful in
 any situation where we are communicating over a low-bandwidth channel, such as
 a modem line or infrared connection or IoT, and we wish to minimize the time needed to transmit our text. Likewise, text compression is also useful for storing collections of large documents more efficiently, in order to allow for a fixed-capacity storage device to contain as many documents as possible.
-Today, the Huffman Coding is used to design text editors and many other text processing applications. It is also behind the compression algorithms used by tools like Microsoft Word and a lot of other text editors. The Huffman Coding is the algorithm behind the design of many compressions algorithms like GZIP, BZIP2, PKZIP. 
+Today, the Huffman Coding is used to design text editors and many other text processing applications. It is also behind the compression algorithms used by tools like Microsoft Word and a bunch of other text editors. The Huffman Coding is the algorithm behind the design of many compressions algorithms like GZIP, BZIP2, PKZIP. 
 
 <br/>
 <hr/>
 <br/>
 
-Thanks for reading. I hope you found this tutorial helpful and I would love to hear your feedback in the Comments section below . You can also share with me what you have learned by sharing your creative projects with me. 
+**Thanks for reading**. I hope you found this tutorial helpful and I would love to hear your feedback in the Comments section below . You can also share with me what you have learned by sharing your creative projects with me. 
