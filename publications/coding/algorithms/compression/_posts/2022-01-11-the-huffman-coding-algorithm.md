@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Huffman Encoding Algorithm
+title: Huffmanefe Encoding Algorithm
 image:
   path:    /assets/img/posts/huffmancoding_1.jpg
 comments: true
