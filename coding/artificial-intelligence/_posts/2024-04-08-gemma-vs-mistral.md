@@ -2,13 +2,12 @@
  
  In this article, I will compare the responses Mistral and Gemma provided to the same questions I asked them.
  I have run those two models separately on my personal computer which is a DELL G15 with an NVIDIA GeForce RTX 3060 with CUDA version 12.2.
- In another article, I compared the same two models on my Macbook Pro M3 PRO.
  
  To run those two models I used Ollama which is an open-source tool created to make LLMs ease of access to any user in the world. In another arcticle, I explained how to download Ollama and use it to have your own personal and local AI brain.
  
 >  Add citation and quote here
 
-User:
+Me:
 
     What is the 100th term of the Fibonnaci sequence ?
 
@@ -33,7 +32,7 @@ Mistral
 > The answer Mistral provided here is not correct. So I asked him to think about the question step by step. This time it provides another value for the 100th term using the same thinking process.
 
 ------------
-User:
+Me:
 
     This answer is not correct Please provide step by step your thinking process
 	
